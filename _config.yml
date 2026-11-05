@@ -4,5 +4,5 @@ title: mayfly
 description: essays and poems from a long inquiry into artificial life and consciousness.
 url: "https://mayfly.torsor.org"
 baseurl: ""
-mock: true   # shows the mock banner; remove before going live
+mock: false  # true shows the mock-up banner (for previews)
 exclude: [bin/, README.md, Gemfile, Gemfile.lock, vendor/]
