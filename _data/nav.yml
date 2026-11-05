@@ -1,0 +1,4 @@
+- { title: essays, url: /essays/ }
+- { title: poems, url: /poems/ }
+- { title: about, url: /about/ }
+- { title: torsor.org ↗, url: "https://torsor.org" }

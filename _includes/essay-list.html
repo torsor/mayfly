@@ -1,0 +1,10 @@
+<ul class="pieces">
+{% for e in site.data.essays %}
+  <li class="piece">
+    <a class="piece__title" href="/essays/{{ e.slug }}/">{{ e.title }}</a>
+    <span class="piece__sub">{{ e.subtitle }}</span>
+    <p>{{ e.line }}</p>
+    <p class="piece__meta">{{ e.author }} · {{ e.date | downcase }} · about {{ e.words }} words · <a href="/essays/{{ e.slug }}/{{ e.slug }}.pdf">pdf</a> · <a href="/essays/{{ e.slug }}/{{ e.slug }}.epub">epub</a></p>
+  </li>
+{% endfor %}
+</ul>

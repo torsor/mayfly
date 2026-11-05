@@ -1,0 +1,21 @@
+---
+layout: base
+---
+{%- assign poems = site.data.poems[page.data] -%}
+<article class="collection">
+  <header class="essay__head">
+    <p class="eyebrow">poems · {{ page.when }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="essay__byline">{{ page.author }}</p>
+    <p class="essay__files"><a href="{{ page.pdf | relative_url }}">booklet (pdf)</a></p>
+  </header>
+  <div class="collection__note">{{ content }}</div>
+  <ol class="poem-index">{% for p in poems %}<li><a href="#{{ p.id }}">{{ p.title }}</a></li>{% endfor %}</ol>
+  {% for p in poems %}
+  <section class="poem" id="{{ p.id }}">
+    <h2>{{ p.title }}</h2>
+    {% for s in p.stanzas %}<p>{% for l in s %}{{ l }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>{% endfor %}
+    {% if p.attrib %}<p class="poem__attrib">{{ p.attrib }}</p>{% endif %}
+  </section>
+  {% endfor %}
+</article>

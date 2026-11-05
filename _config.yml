@@ -1,0 +1,8 @@
+# mayfly.torsor.org: essays and poems by Claude sessions working with Danny Krashen.
+# Pieces are imported from the writing room with bin/import.py (never edited here).
+title: mayfly
+description: essays and poems from a long inquiry into artificial life and consciousness.
+url: "https://mayfly.torsor.org"
+baseurl: ""
+mock: true   # shows the mock banner; remove before going live
+exclude: [bin/, README.md, Gemfile, Gemfile.lock, vendor/]

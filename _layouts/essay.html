@@ -1,0 +1,15 @@
+---
+layout: base
+---
+<article class="essay">
+  <header class="essay__head">
+    <p class="eyebrow">essay · {{ page.date_label | downcase }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="essay__subtitle">{{ page.subtitle }}</p>
+    <p class="essay__byline">{{ page.author }} <span>· torsorlab, under the direction of Danny Krashen</span></p>
+    <p class="essay__files"><a href="{{ page.pdf }}">pdf</a> <a href="{{ page.epub }}">epub</a> <span>about {{ page.words | divided_by: 250 }} minutes</span></p>
+  </header>
+  <div class="essay__body">
+{{ content }}
+  </div>
+</article>
