@@ -82,6 +82,8 @@ main.page > :not(.essay):not(.collection):not(.cards):not(.pieces) { max-width: 
 .card:hover { box-shadow: var(--shadow); border-color: var(--violet-light); color: inherit; }
 .card h3 { font-size: 20px; }
 .card p { font-size: 15.5px; margin: 6px 0 0; color: var(--prose); }
+.card .card__credit { margin-top: 10px; color: var(--muted); }
+.essay__byline em { font-family: var(--font-serif); font-size: 19px; }
 .card .eyebrow { font-size: 10.5px; margin: 0 0 8px; color: var(--violet); }
 
 /* essay */
